@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+:root {
+    --fundo: #472D2D;
+    --borda: #553939;
+    --corLetra: #A77979;
+}
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: var(--fundo);
+    user-select: none;
+}
+.relogio h2{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    color: var(--corLetra);
+    margin-top:250px;
+}
+.relogio .hora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top:250px; */
+}
+.relogio .hora div{
+    max-width:80px;
+    padding:45px;
+    background-color: var(--fundo);
+    color:var(--corLetra);
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Raleway', sans-serif;
+    border: 5px solid var(--borda);
+    border-radius: 15px;
+    transition: 0.2s;
+}
+.relogio span {
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    padding:5px;
+    color: var(--corLetra)
+}
+
+#github {
+    display: flex;
+    justify-content: center;
+    margin-top:25px;
+}
+#github a{
+    color: var(--corLetra);
+    text-decoration: none !important;
+
+}
+
+@media screen and (max-width:620px) {
+    .relogio h2{
+        font-size: 2em;
+    }
+    .relogio .hora div{
+        font-size: 3em;
+        padding:15px;
+    }
+}
